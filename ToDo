@@ -1,0 +1,34 @@
+* create github repository to publish the code
+* send asnwers to kuba@roundforest.com, ran@roundforest.com
+* note how much time did you spend doing the task ?
+* use any JVM language, any libraries and frameworks that make you productive
+
+Issues:
+* find 1000 most active users (profile names)
+* find 1000 most commented food items (item ids)
+* find 1000 most used words in the reviews
+* translate all the reviews with Google Translate API
+   [you can send up to 1000 chars per HTTP call,
+    API has 200ms average response time,
+    how to do it efficiently and cost effective
+      (pay for API calls, concurrency limit is 100 requests in parallel max),
+    mock the calls to Google Translate API (https://api.google.com/translate),
+      content type: application/json,
+      format (POST): 
+        request: { "input_lang":"en", output_lang:"fr", text: "hello, ..." }
+        response: { "text": "salut, ..." },
+      any errors will be reported by the HTTP codes ]
+      
+
+Key Points:
+* clean testable code (plus tests if you have time)
+* how do you make sure that there are no duplicates in the file?
+* full multi core CPU power
+* hardware requirements: 500 MB of RAM
+    make sure not using more than that?
+    monitor the memory usage ?
+* goal is to support the files with up to 100M reviews on multiple machines with 500MB of RAM and 4 core CPUs
+
+* please provide working code (command to compile and run the code)
+    that prints output of point 1,2,3 to standard output sorted alphabetically
+    and executes point 4 to mocked endpoint (when launched with the argument 'translate=true')
