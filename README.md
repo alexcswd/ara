@@ -20,6 +20,6 @@ this implementation can be improved a bit further in the following way
 TO RUN:
 * place "Reviews.csv" file into resources directory
 and
-$> sbt run
+* $> sbt run
 or
-$> sbt run translate=true
+* $> sbt run translate=true
